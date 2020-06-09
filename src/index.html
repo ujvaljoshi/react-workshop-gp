@@ -9,61 +9,6 @@
   <body>
     <div id="root">Not Rendered</div>
 
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
-
-    <script>
-      const Match = (props) => {
-        return React.createElement("div", {}, [
-          React.createElement("p", {}, props.time),
-          React.createElement("p", {}, props.home),
-          React.createElement("p", {}, props.away),
-          React.createElement("p", {}, props.win),
-          React.createElement("p", {}, props.draw),
-          React.createElement("p", {}, props.loss),
-        ]);
-      };
-
-      const App = () => {
-        return React.createElement("div", {}, [
-          React.createElement("h1", {}, "Betting App"),
-          React.createElement(Match, {
-            time: "1.30",
-            home: "Manchester United",
-            away: "Liverpool",
-            win: "1.12",
-            draw: "2.5",
-            loss: "3.0",
-          }),
-          React.createElement(Match, {
-            time: "1.40",
-            home: "Arsenal",
-            away: "Tottenham",
-            win: "1.12",
-            draw: "2.5",
-            loss: "3.0",
-          }),
-          React.createElement(Match, {
-            time: "1.50",
-            home: "Wolves",
-            away: "Watford",
-            win: "1.12",
-            draw: "2.5",
-            loss: "3.0",
-          }),
-        ]);
-      };
-
-      ReactDOM.render(
-        React.createElement(App),
-        document.getElementById("root")
-      );
-    </script>
+    <script src="./App.js"></script>
   </body>
 </html>
