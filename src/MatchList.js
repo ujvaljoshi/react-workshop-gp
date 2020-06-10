@@ -14,6 +14,7 @@ class MatchList extends React.Component {
             win={match.odds.win}
             loss={match.odds.loss}
             draw={match.odds.draw}
+            setBet={this.props.setBet}
           />
         </li>
       );
