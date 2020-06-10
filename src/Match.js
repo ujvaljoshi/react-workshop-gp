@@ -9,13 +9,14 @@ const Match = (props) => {
 
       <div className="teams">
         <p>{props.home}</p>
+        <p className="vs">vs</p>
         <p>{props.away}</p>
       </div>
 
       <div className="odds">
-        <p>{props.win}</p>
-        <p>{props.draw}</p>
-        <p>{props.loss}</p>
+        <button className="win">{props.win}</button>
+        <button className="draw">{props.draw}</button>
+        <button className="loss">{props.loss}</button>
       </div>
     </div>
   );
